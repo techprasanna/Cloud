@@ -67,7 +67,7 @@ if __name__ == '__main__':
         print(frame.Timestamp)
         alist = frame.Images
         # print(type(alist))
-        cv2.imwrite(str(count)+'_faces.jpg', alist)
+        cv2.imwrite(str(count)+ str(frame.Cam_IP)+'_faces.jpg', alist)
         count += 1
     # while True:
     #
